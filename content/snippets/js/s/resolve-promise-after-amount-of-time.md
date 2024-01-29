@@ -15,7 +15,7 @@ Creates a promise that resolves after a given amount of time to the provided val
 ```js
 const resolveAfter = (value, delay) =>
   new Promise(resolve => {
-    setTimeout(() => resolve(value, delay));
+    setTimeout(() => resolve(value), delay);
   });
 
 resolveAfter('Hello', 1000);
